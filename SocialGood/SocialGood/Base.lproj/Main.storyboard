@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialGood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plant" translatesAutoresizingMaskIntoConstraints="NO" id="iRe-wB-dkH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKi-jg-McN">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Always Growing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4G-fB-ZZa">
+                                        <rect key="frame" x="20" y="20" width="335" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34380501760563381" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7MF-Pz-UPZ"/>
+                                    <constraint firstItem="W4G-fB-ZZa" firstAttribute="leading" secondItem="xKi-jg-McN" secondAttribute="leading" constant="20" id="CIU-Rl-C0y"/>
+                                    <constraint firstAttribute="trailing" secondItem="W4G-fB-ZZa" secondAttribute="trailing" constant="20" id="HVc-DH-sfp"/>
+                                    <constraint firstItem="W4G-fB-ZZa" firstAttribute="top" secondItem="xKi-jg-McN" secondAttribute="top" constant="20" id="VMe-VX-9Wb"/>
+                                    <constraint firstItem="W4G-fB-ZZa" firstAttribute="leading" secondItem="xKi-jg-McN" secondAttribute="leading" constant="20" id="wfW-vx-GcS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xKi-jg-McN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="407-4i-8OM"/>
+                            <constraint firstItem="iRe-wB-dkH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4wp-bU-Xe3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xKi-jg-McN" secondAttribute="trailing" id="M9l-gY-pVQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRe-wB-dkH" secondAttribute="trailing" id="QRB-Y8-Mhj"/>
+                            <constraint firstItem="iRe-wB-dkH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ru2-Yl-RLE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iRe-wB-dkH" secondAttribute="bottom" id="gCO-X9-N6H"/>
+                            <constraint firstItem="xKi-jg-McN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="jwb-Zj-WdO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xKi-jg-McN" secondAttribute="bottom" id="kb2-nR-oNa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plant" width="615" height="400"/>
+    </resources>
+</document>
