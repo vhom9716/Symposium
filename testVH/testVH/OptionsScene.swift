@@ -1,23 +1,23 @@
 //
-//  NewGameScene.swift
+//  OptionsScene.swift
 //  testVH
 //
-//  Created by Student on 3/16/18.
+//  Created by Student on 3/23/18.
 //  Copyright © 2018 Student. All rights reserved.
 //
 
+import Foundation
 import SpriteKit
 import GameplayKit
 
-class NewGameScene: SKScene {
-    
+class OptionsScene: SKScene {
+
     private var sceneNext: SKScene?
-    private var BackGameButton: SKLabelNode?
-    private var otherGameScene: SKScene?
+    private var NewGameScene: SKScene?
     
     override func didMove(to view: SKView) {
         let textNodeNew = SKLabelNode(fontNamed: "Chalkduster")
-        textNodeNew.text = "New Game Scene!"
+        textNodeNew.text = "Options Scene!"
         textNodeNew.fontSize = 65
         textNodeNew.fontColor = SKColor.green
         textNodeNew.position = CGPoint(x: frame.midX, y: frame.midY + 200)
@@ -31,8 +31,8 @@ class NewGameScene: SKScene {
         menuNode.fontColor = SKColor.black
         menuNode.position = CGPoint(x: frame.midX, y: frame.midY - 150)
         addChild(menuNode)
-        
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         let touch:UITouch = touches.first! as UITouch
@@ -47,7 +47,7 @@ class NewGameScene: SKScene {
             return
             
         }
-
+        
         let transition = SKTransition.reveal(
             with: .down, duration: 1.0)
         
@@ -55,7 +55,7 @@ class NewGameScene: SKScene {
         nextScene?.scaleMode = .aspectFill
         
         scene?.view?.presentScene(sceneNext!, transition: transition)
-        print("transitionToMenu from newGameScene")
+        print("transitionToMenu from Options")
         
     }
 }
