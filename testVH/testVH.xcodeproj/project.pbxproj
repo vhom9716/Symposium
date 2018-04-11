@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0E8031207E613B00D0B185 /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E8030207E613B00D0B185 /* TestScene.swift */; };
 		3F67232920615495008BD8E4 /* NewGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F67232820615495008BD8E4 /* NewGameScene.sks */; };
 		3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AC26D205C11AD00FA2372 /* NewGameScene.swift */; };
 		3FA1135A205970070059A899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11359205970070059A899 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0E8030207E613B00D0B185 /* TestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
 		3F67232820615495008BD8E4 /* NewGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NewGameScene.sks; sourceTree = "<group>"; };
 		3F8AC26D205C11AD00FA2372 /* NewGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameScene.swift; sourceTree = "<group>"; };
 		3FA11356205970070059A899 /* testVH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testVH.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				3FAE51E9206550C000780A86 /* OptionsScene.sks */,
 				3FAE51EB206550FF00780A86 /* CreditsScene.swift */,
 				3FAE51ED2065510C00780A86 /* CreditsScene.sks */,
+				3F0E8030207E613B00D0B185 /* TestScene.swift */,
 			);
 			path = testVH;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				3FA11360205970080059A899 /* GameScene.swift in Sources */,
 				3FA11362205970080059A899 /* GameViewController.swift in Sources */,
 				3FA1135A205970070059A899 /* AppDelegate.swift in Sources */,
+				3F0E8031207E613B00D0B185 /* TestScene.swift in Sources */,
 				3FAE51E8206550A900780A86 /* OptionsScene.swift in Sources */,
 				3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */,
 				3FAE51EC206550FF00780A86 /* CreditsScene.swift in Sources */,
