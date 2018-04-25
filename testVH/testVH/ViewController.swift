@@ -20,7 +20,7 @@ class CharacterScreen: UIViewController {
         }else if female.select{
             
         }else{
-            //popup
+            //popups
         }
     }
     @IBAction func chooseCharacter(_ sender: SelectButton) {
