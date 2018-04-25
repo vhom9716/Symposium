@@ -301,6 +301,7 @@
 				3F3E868A2080FC60003E8BCA /* SelectButton.swift in Sources */,
 				3FA11362205970080059A899 /* GameViewController.swift in Sources */,
 				3FA1135A205970070059A899 /* AppDelegate.swift in Sources */,
+				3F0E8031207E613B00D0B185 /* TestScene.swift in Sources */,
 				3FAE51E8206550A900780A86 /* OptionsScene.swift in Sources */,
 				3F9C51D6207FAE2100D48CAB /* ViewController.swift in Sources */,
 				3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */,
