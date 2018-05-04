@@ -20,7 +20,8 @@ class CreditsScene: SKScene {
     var dev2Node: SKLabelNode?
     var dev3Node: SKLabelNode?
     var clockTimer = Timer()
-    //test
+    
+    
     
     
     override func didMove(to view: SKView) {
