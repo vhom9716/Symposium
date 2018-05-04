@@ -10,6 +10,9 @@ import UIKit
 
 class CharacterScreen: UIViewController {
     
+    var bounds = UIScreen.main.bounds
+    var maleOrigin : CGPoint = CGPoint(x:0,y:0)
+    var femaleOrigin : CGPoint = CGPoint(x:0,y:0)
     @IBOutlet weak var male: SelectButton!
     @IBOutlet weak var female: SelectButton!
     @IBOutlet weak var chooseCharacter: SelectButton!
@@ -23,21 +26,59 @@ class CharacterScreen: UIViewController {
             //popupsasdaslkmgehmkp
         }
     }
+    @IBAction func selectChar(_ sender: UIButton) {
+        
+    }
     @IBAction func chooseCharacter(_ sender: SelectButton) {
-        sender.change()
+        if male.select == false && female.select == false{
+            sender.change()
+        }
+        else if sender == male {
+            if(!male.select && female.select){
+                sender.change()
+                female.change()
+            }else{
+                sender.change()
+            }
+        }
+        else{
+            if(!female.select && male.select){
+                sender.change()
+                male.change()
+            }else{
+                sender.change()
+            }
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateScreen()
-        // Do any additional setup after loading the view.
+        maleOrigin = male.frame.origin
+        male.frame.origin = CGPoint(x:-male.frame.width, y: maleOrigin.y)
+        femaleOrigin = female.frame.origin
+        female.frame.origin = CGPoint(x: bounds.width, y: femaleOrigin.y)
+        // Do any additional setuping the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.male.frame.origin = self.maleOrigin
+            self.female.frame.origin = self.femaleOrigin
+        }, completion: nil)
+       
+    
     }
     
     func updateScreen(){
-       male.imgSrc = "onedollar.jpg"
-        female.imgSrc = "onedollar.jpg"
-        male.setBackgroundImage(UIImage(named:"onedollar.jpg"), for: .normal)
-        female.setBackgroundImage(UIImage(named:"onedollar.jpg"), for: .normal)
+       male.imgSrc = "maleavatar.png"
+        female.imgSrc = "femaleavatar.png"
+        male.layer.cornerRadius = 10
+        male.clipsToBounds = true
+        female.layer.cornerRadius = 10
+        female.clipsToBounds = true
+        male.setBackgroundImage(UIImage(named:"maleavatar.png"), for: .normal)
+        female.setBackgroundImage(UIImage(named:"femaleavatar.png"), for: .normal)
         
     }
     override func didReceiveMemoryWarning() {
