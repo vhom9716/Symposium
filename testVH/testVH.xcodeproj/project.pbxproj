@@ -28,7 +28,7 @@
 		3FEB834920A0A219006F0A87 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB834820A0A219006F0A87 /* Stock.swift */; };
 		3FEB834B20A0A23B006F0A87 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB834A20A0A23B006F0A87 /* Profile.swift */; };
 		3FEB835120A0A4D9006F0A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB835020A0A4D9006F0A87 /* Assets.xcassets */; };
-		3FEB835320A0A532006F0A87 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB835220A0A531006F0A87 /* fonts */; };
+		3FEB835720A0A7E2006F0A87 /* MontereyFLF-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB835620A0A7E2006F0A87 /* MontereyFLF-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +76,7 @@
 		3FEB834820A0A219006F0A87 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		3FEB834A20A0A23B006F0A87 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3FEB835020A0A4D9006F0A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FEB835220A0A531006F0A87 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		3FEB835620A0A7E2006F0A87 /* MontereyFLF-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontereyFLF-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 		3FA11358205970070059A899 /* testVH */ = {
 			isa = PBXGroup;
 			children = (
-				3FEB835220A0A531006F0A87 /* fonts */,
+				3FEB835520A0A78A006F0A87 /* fonts */,
 				3FEB835020A0A4D9006F0A87 /* Assets.xcassets */,
 				3FA11359205970070059A899 /* AppDelegate.swift */,
 				3FA1135D205970080059A899 /* Actions.sks */,
@@ -168,6 +168,15 @@
 				3FA11381205970080059A899 /* Info.plist */,
 			);
 			path = testVHUITests;
+			sourceTree = "<group>";
+		};
+		3FEB835520A0A78A006F0A87 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3FEB835620A0A7E2006F0A87 /* MontereyFLF-Bold.ttf */,
+			);
+			name = fonts;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,13 +286,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEB835720A0A7E2006F0A87 /* MontereyFLF-Bold.ttf in Resources */,
 				3FA11365205970080059A899 /* Main.storyboard in Resources */,
 				3F67232920615495008BD8E4 /* NewGameScene.sks in Resources */,
 				3FAE51EE2065510C00780A86 /* CreditsScene.sks in Resources */,
 				3FA1136A205970080059A899 /* LaunchScreen.storyboard in Resources */,
 				3FAE51E62065471C00780A86 /* GameScene.sks in Resources */,
 				3FAE51EA206550C000780A86 /* OptionsScene.sks in Resources */,
-				3FEB835320A0A532006F0A87 /* fonts in Resources */,
 				3FEB835120A0A4D9006F0A87 /* Assets.xcassets in Resources */,
 				3FA1135E205970080059A899 /* Actions.sks in Resources */,
 			);
