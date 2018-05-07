@@ -16,7 +16,6 @@
 		3FA11360205970080059A899 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1135F205970080059A899 /* GameScene.swift */; };
 		3FA11362205970080059A899 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11361205970080059A899 /* GameViewController.swift */; };
 		3FA11365205970080059A899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA11363205970080059A899 /* Main.storyboard */; };
-		3FA11367205970080059A899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA11366205970080059A899 /* Assets.xcassets */; };
 		3FA1136A205970080059A899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA11368205970080059A899 /* LaunchScreen.storyboard */; };
 		3FA11375205970080059A899 /* testVHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11374205970080059A899 /* testVHTests.swift */; };
 		3FA11380205970080059A899 /* testVHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1137F205970080059A899 /* testVHUITests.swift */; };
@@ -27,6 +26,9 @@
 		3FAE51EA206550C000780A86 /* OptionsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE51E9206550C000780A86 /* OptionsScene.sks */; };
 		3FAE51EC206550FF00780A86 /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE51EB206550FF00780A86 /* CreditsScene.swift */; };
 		3FAE51EE2065510C00780A86 /* CreditsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE51ED2065510C00780A86 /* CreditsScene.sks */; };
+		3FEB834920A0A219006F0A87 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB834820A0A219006F0A87 /* Stock.swift */; };
+		3FEB834B20A0A23B006F0A87 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB834A20A0A23B006F0A87 /* Profile.swift */; };
+		3FEB834F20A0A384006F0A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB834E20A0A384006F0A87 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,6 @@
 		3FA1135F205970080059A899 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3FA11361205970080059A899 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3FA11364205970080059A899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3FA11366205970080059A899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA11369205970080059A899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA1136B205970080059A899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA11370205970080059A899 /* testVHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testVHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +74,9 @@
 		3FAE51E9206550C000780A86 /* OptionsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OptionsScene.sks; sourceTree = "<group>"; };
 		3FAE51EB206550FF00780A86 /* CreditsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsScene.swift; sourceTree = "<group>"; };
 		3FAE51ED2065510C00780A86 /* CreditsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CreditsScene.sks; sourceTree = "<group>"; };
+		3FEB834820A0A219006F0A87 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		3FEB834A20A0A23B006F0A87 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3FEB834E20A0A384006F0A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +132,7 @@
 				3FAE51E52065471C00780A86 /* GameScene.sks */,
 				3FA1135F205970080059A899 /* GameScene.swift */,
 				3FA11363205970080059A899 /* Main.storyboard */,
-				3FA11366205970080059A899 /* Assets.xcassets */,
+				3FEB834E20A0A384006F0A87 /* Assets.xcassets */,
 				3FA5CF7E209A093200CC8A07 /* fonts */,
 				3FA11368205970080059A899 /* LaunchScreen.storyboard */,
 				3FA1136B205970080059A899 /* Info.plist */,
@@ -142,6 +146,8 @@
 				3F9C51D5207FAE2100D48CAB /* ViewController.swift */,
 				3F3E86892080FC60003E8BCA /* SelectButton.swift */,
 				3FA5CF7C209376E600CC8A07 /* PopUpViewController.swift */,
+				3FEB834820A0A219006F0A87 /* Stock.swift */,
+				3FEB834A20A0A23B006F0A87 /* Profile.swift */,
 			);
 			path = testVH;
 			sourceTree = "<group>";
@@ -281,8 +287,8 @@
 			files = (
 				3FA5CF80209A095400CC8A07 /* MontereyFLF-Bold.ttf in Resources */,
 				3FA11365205970080059A899 /* Main.storyboard in Resources */,
-				3FA11367205970080059A899 /* Assets.xcassets in Resources */,
 				3F67232920615495008BD8E4 /* NewGameScene.sks in Resources */,
+				3FEB834F20A0A384006F0A87 /* Assets.xcassets in Resources */,
 				3FAE51EE2065510C00780A86 /* CreditsScene.sks in Resources */,
 				3FA1136A205970080059A899 /* LaunchScreen.storyboard in Resources */,
 				3FAE51E62065471C00780A86 /* GameScene.sks in Resources */,
@@ -320,6 +326,8 @@
 				3F9C51D6207FAE2100D48CAB /* ViewController.swift in Sources */,
 				3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */,
 				3FA5CF7D209376E600CC8A07 /* PopUpViewController.swift in Sources */,
+				3FEB834B20A0A23B006F0A87 /* Profile.swift in Sources */,
+				3FEB834920A0A219006F0A87 /* Stock.swift in Sources */,
 				3FAE51EC206550FF00780A86 /* CreditsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
