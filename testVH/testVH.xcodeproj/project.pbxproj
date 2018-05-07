@@ -20,7 +20,6 @@
 		3FA11375205970080059A899 /* testVHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11374205970080059A899 /* testVHTests.swift */; };
 		3FA11380205970080059A899 /* testVHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1137F205970080059A899 /* testVHUITests.swift */; };
 		3FA5CF7D209376E600CC8A07 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5CF7C209376E600CC8A07 /* PopUpViewController.swift */; };
-		3FA5CF80209A095400CC8A07 /* MontereyFLF-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FA5CF7F209A094C00CC8A07 /* MontereyFLF-Bold.ttf */; };
 		3FAE51E62065471C00780A86 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE51E52065471C00780A86 /* GameScene.sks */; };
 		3FAE51E8206550A900780A86 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE51E7206550A900780A86 /* OptionsScene.swift */; };
 		3FAE51EA206550C000780A86 /* OptionsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE51E9206550C000780A86 /* OptionsScene.sks */; };
@@ -28,7 +27,8 @@
 		3FAE51EE2065510C00780A86 /* CreditsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE51ED2065510C00780A86 /* CreditsScene.sks */; };
 		3FEB834920A0A219006F0A87 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB834820A0A219006F0A87 /* Stock.swift */; };
 		3FEB834B20A0A23B006F0A87 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB834A20A0A23B006F0A87 /* Profile.swift */; };
-		3FEB834F20A0A384006F0A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB834E20A0A384006F0A87 /* Assets.xcassets */; };
+		3FEB835120A0A4D9006F0A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB835020A0A4D9006F0A87 /* Assets.xcassets */; };
+		3FEB835320A0A532006F0A87 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB835220A0A531006F0A87 /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 		3FA1137F205970080059A899 /* testVHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVHUITests.swift; sourceTree = "<group>"; };
 		3FA11381205970080059A899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA5CF7C209376E600CC8A07 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		3FA5CF7F209A094C00CC8A07 /* MontereyFLF-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontereyFLF-Bold.ttf"; path = "../../../../../Downloads/monterey/MontereyFLF-Bold.ttf"; sourceTree = "<group>"; };
 		3FAE51E52065471C00780A86 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3FAE51E7206550A900780A86 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 		3FAE51E9206550C000780A86 /* OptionsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OptionsScene.sks; sourceTree = "<group>"; };
@@ -76,7 +75,8 @@
 		3FAE51ED2065510C00780A86 /* CreditsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CreditsScene.sks; sourceTree = "<group>"; };
 		3FEB834820A0A219006F0A87 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		3FEB834A20A0A23B006F0A87 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		3FEB834E20A0A384006F0A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
+		3FEB835020A0A4D9006F0A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FEB835220A0A531006F0A87 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,13 +127,13 @@
 		3FA11358205970070059A899 /* testVH */ = {
 			isa = PBXGroup;
 			children = (
+				3FEB835220A0A531006F0A87 /* fonts */,
+				3FEB835020A0A4D9006F0A87 /* Assets.xcassets */,
 				3FA11359205970070059A899 /* AppDelegate.swift */,
 				3FA1135D205970080059A899 /* Actions.sks */,
 				3FAE51E52065471C00780A86 /* GameScene.sks */,
 				3FA1135F205970080059A899 /* GameScene.swift */,
 				3FA11363205970080059A899 /* Main.storyboard */,
-				3FEB834E20A0A384006F0A87 /* Assets.xcassets */,
-				3FA5CF7E209A093200CC8A07 /* fonts */,
 				3FA11368205970080059A899 /* LaunchScreen.storyboard */,
 				3FA1136B205970080059A899 /* Info.plist */,
 				3F67232820615495008BD8E4 /* NewGameScene.sks */,
@@ -168,14 +168,6 @@
 				3FA11381205970080059A899 /* Info.plist */,
 			);
 			path = testVHUITests;
-			sourceTree = "<group>";
-		};
-		3FA5CF7E209A093200CC8A07 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3FA5CF7F209A094C00CC8A07 /* MontereyFLF-Bold.ttf */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,14 +277,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA5CF80209A095400CC8A07 /* MontereyFLF-Bold.ttf in Resources */,
 				3FA11365205970080059A899 /* Main.storyboard in Resources */,
 				3F67232920615495008BD8E4 /* NewGameScene.sks in Resources */,
-				3FEB834F20A0A384006F0A87 /* Assets.xcassets in Resources */,
 				3FAE51EE2065510C00780A86 /* CreditsScene.sks in Resources */,
 				3FA1136A205970080059A899 /* LaunchScreen.storyboard in Resources */,
 				3FAE51E62065471C00780A86 /* GameScene.sks in Resources */,
 				3FAE51EA206550C000780A86 /* OptionsScene.sks in Resources */,
+				3FEB835320A0A532006F0A87 /* fonts in Resources */,
+				3FEB835120A0A4D9006F0A87 /* Assets.xcassets in Resources */,
 				3FA1135E205970080059A899 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
