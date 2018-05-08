@@ -15,7 +15,7 @@ class CharacterScreen: UIViewController {
     var femaleOrigin : CGPoint = CGPoint(x:0,y:0)
     @IBOutlet weak var male: SelectButton!
     @IBOutlet weak var female: SelectButton!
-    @IBOutlet weak var chooseCharacter: SelectButton!
+    @IBOutlet weak var chooseCharacter: UIButton!
     var imgSrc: String = ""
     @IBAction func selectCharacter(_ sender: Any) {
         if male.select{
@@ -71,7 +71,7 @@ class CharacterScreen: UIViewController {
     }
     
     func updateScreen(){
-       male.imgSrc = "maleavatar.png"
+        male.imgSrc = "maleavatar.png"
         female.imgSrc = "femaleavatar.png"
         male.layer.cornerRadius = 10
         male.clipsToBounds = true
@@ -79,7 +79,8 @@ class CharacterScreen: UIViewController {
         female.clipsToBounds = true
         male.setBackgroundImage(UIImage(named:"maleavatar.png"), for: .normal)
         female.setBackgroundImage(UIImage(named:"femaleavatar.png"), for: .normal)
-        
+        chooseCharacter.layer.cornerRadius = 10
+        chooseCharacter.clipsToBounds = true
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
