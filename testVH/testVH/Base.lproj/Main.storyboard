@@ -52,7 +52,7 @@
                                 <rect key="frame" x="120" y="508" width="135" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Select "/>
+                                <state key="normal" title="ChooseCharacter"/>
                                 <connections>
                                     <action selector="selectCharacter:" destination="Dkn-3b-dXd" eventType="touchUpInside" id="IEh-6V-4Pe"/>
                                 </connections>
@@ -68,13 +68,35 @@
                         <viewLayoutGuide key="safeArea" id="6SU-Aa-tN6"/>
                     </view>
                     <connections>
+                        <outlet property="chooseCharacter" destination="luv-P8-IZe" id="oSn-v5-Sch"/>
                         <outlet property="female" destination="uKc-uX-IGF" id="tID-GP-9TO"/>
                         <outlet property="male" destination="8fe-wC-Ph2" id="RxL-w1-58N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1e-Zt-9vl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895.20000000000005" y="-33.733133433283363"/>
+            <point key="canvasLocation" x="-1111" y="-134"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="2ud-cR-Ulj">
+            <objects>
+                <viewController id="Exz-EU-RZj" customClass="GameViewController" customModule="testVH" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Km3-NP-l5t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ze1-ZA-gdt" customClass="GameScene" customModule="testVH" customModuleProvider="target">
+                                <rect key="frame" x="46" y="43" width="282" height="580"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </skView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bRz-df-bjH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWs-nV-TI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290.39999999999998" y="-133.5832083958021"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="Nip-Vj-GkM">
@@ -89,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvU-6t-tZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="-49"/>
+            <point key="canvasLocation" x="732" y="-52"/>
         </scene>
     </scenes>
     <resources>
