@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchimage.Asoectfill" translatesAutoresizingMaskIntoConstraints="NO" id="59N-CT-eN6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchimage.Aspectfill" translatesAutoresizingMaskIntoConstraints="NO" id="59N-CT-eN6">
                                 <rect key="frame" x="11" y="-55" width="393" height="860"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchimage.Asoectfill" width="768" height="1004"/>
+        <image name="launchimage.Aspectfill" width="768" height="1004"/>
     </resources>
 </document>
