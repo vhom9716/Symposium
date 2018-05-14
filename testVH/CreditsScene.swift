@@ -118,5 +118,6 @@ class CreditsScene: SKScene {
         //scene?.view?.presentScene(sceneNext!, transition: transition)
         //print("transitionToMenu from Credits")
         
-    //}
+    //}lol
+    
 }
