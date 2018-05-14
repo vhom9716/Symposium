@@ -94,7 +94,7 @@ class GameScene: SKScene {
                 sceneNext = SKScene(fileNamed: "NewGameScene")
         
             case "creditsNode"?:
-                sceneNext = SKScene(fileNamed: "CreditsScene")
+                sceneNext = SKScene(fileNamed: "CreditScene")
                 print("creditsNode clicked")
             
             default:

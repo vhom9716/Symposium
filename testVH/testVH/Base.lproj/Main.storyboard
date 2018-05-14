@@ -49,12 +49,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luv-P8-IZe">
-                                <rect key="frame" x="120" y="508" width="135" height="132"/>
+                                <rect key="frame" x="120" y="498" width="135" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ChooseCharacter"/>
                                 <connections>
                                     <action selector="selectCharacter:" destination="Dkn-3b-dXd" eventType="touchUpInside" id="IEh-6V-4Pe"/>
+                                    <segue destination="Exz-EU-RZj" kind="show" id="hks-0s-s0B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,18 +82,22 @@
         <scene sceneID="2ud-cR-Ulj">
             <objects>
                 <viewController id="Exz-EU-RZj" customClass="GameViewController" customModule="testVH" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Km3-NP-l5t">
+                    <view key="view" contentMode="scaleToFill" id="Km3-NP-l5t" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <skView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ze1-ZA-gdt" customClass="GameScene" customModule="testVH" customModuleProvider="target">
-                                <rect key="frame" x="46" y="43" width="282" height="580"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-0B-Yyb">
+                                <rect key="frame" x="166" y="502" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </skView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bRz-df-bjH"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JOx-0y-HmJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWs-nV-TI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

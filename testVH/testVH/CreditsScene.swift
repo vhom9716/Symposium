@@ -16,6 +16,7 @@ class CreditsScene: SKScene {
     
     
     
+    
     override func didMove(to view: SKView) {
         //let textNodeNew = SKLabelNode(fontNamed: "Chalkduster")
         //textNodeNew.text = "Credits Scene!"
@@ -25,7 +26,9 @@ class CreditsScene: SKScene {
         
         //addChild(textNodeNew)
         
-        creditNode = SKLabelNode(fontNamed: "Papyrus")
+        
+        
+        creditNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         creditNode?.name = "creditNode"
         creditNode?.text = "Credit:"
         creditNode?.fontSize = 80
@@ -42,7 +45,7 @@ class CreditsScene: SKScene {
         //addChild(menuNode)
         
         
-        dev1Node = SKLabelNode(fontNamed: "Papyrus")
+        dev1Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         dev1Node?.name = "dev1Node"
         dev1Node?.text = "Jason Yan - Developer"
         dev1Node?.fontSize = 65
@@ -50,7 +53,7 @@ class CreditsScene: SKScene {
         dev1Node?.position = CGPoint(x: frame.midX, y: frame.midY + 100)
         addChild(dev1Node!)
         
-        dev2Node = SKLabelNode(fontNamed: "Papyrus")
+        dev2Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         dev2Node?.name = "dev2Node"
         dev2Node?.text = "Zhehao Lin - Developer"
         dev2Node?.fontSize = 65
@@ -58,7 +61,7 @@ class CreditsScene: SKScene {
         dev2Node?.position = CGPoint(x: frame.midX, y: frame.midY - 50)
         addChild(dev2Node!)
         
-        dev3Node = SKLabelNode(fontNamed: "Papyrus")
+        dev3Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         dev3Node?.name = "dev3Node"
         dev3Node?.text = "Victor Hom - Devloper"
         dev3Node?.fontSize = 65
@@ -84,6 +87,7 @@ class CreditsScene: SKScene {
             self.dev3Node?.run(sequence)
         })
     }
+    
     
     //override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
