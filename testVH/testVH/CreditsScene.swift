@@ -48,7 +48,7 @@ class CreditsScene: SKScene {
         dev1Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         dev1Node?.name = "dev1Node"
         dev1Node?.text = "Jason Yan - Developer"
-        dev1Node?.fontSize = 65
+        dev1Node?.fontSize = 50
         dev1Node?.fontColor = SKColor.black
         dev1Node?.position = CGPoint(x: frame.midX, y: frame.midY + 100)
         addChild(dev1Node!)
@@ -56,7 +56,7 @@ class CreditsScene: SKScene {
         dev2Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         dev2Node?.name = "dev2Node"
         dev2Node?.text = "Zhehao Lin - Developer"
-        dev2Node?.fontSize = 65
+        dev2Node?.fontSize = 50
         dev2Node?.fontColor = SKColor.black
         dev2Node?.position = CGPoint(x: frame.midX, y: frame.midY - 50)
         addChild(dev2Node!)
@@ -64,7 +64,7 @@ class CreditsScene: SKScene {
         dev3Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         dev3Node?.name = "dev3Node"
         dev3Node?.text = "Victor Hom - Devloper"
-        dev3Node?.fontSize = 65
+        dev3Node?.fontSize = 50
         dev3Node?.fontColor = SKColor.black
         dev3Node?.position = CGPoint(x: frame.midX, y: frame.midY - 200)
         addChild(dev3Node!)
