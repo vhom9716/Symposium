@@ -2,6 +2,7 @@ import Foundation
 import SpriteKit
 import GameplayKit
 import UIKit
+import AVFoundation
 
 class CreditsScene: SKScene {
     
@@ -12,6 +13,7 @@ class CreditsScene: SKScene {
     var dev2Node: SKLabelNode?
     var dev3Node: SKLabelNode?
     var clockTimer = Timer()
+    var music: AVAudioPlayer = AVAudioPlayer()
     
     
     
@@ -25,6 +27,18 @@ class CreditsScene: SKScene {
         //textNodeNew.position = CGPoint(x: frame.midX, y: frame.midY + 200)
         
         //addChild(textNodeNew)
+        let musicfile = Bundle.main.path(forResource: "Coin01", ofType: ".aif")
+        
+        do{
+            
+           try music=AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicfile!))
+            
+            
+            // this sound effect need to be tested!
+        }
+        catch{
+            print("hi")
+        }
         
         
         
@@ -36,13 +50,13 @@ class CreditsScene: SKScene {
         creditNode?.position = CGPoint(x: frame.midX, y: frame.midY + 300)
         addChild(creditNode!)
         
-        // let menuNode = SKLabelNode(fontNamed: "Papyrus")
-        //menuNode.name = "menuNode"
-        //menuNode.text = "Return to Menu"
-        //menuNode.fontSize = 80
-        //menuNode.fontColor = SKColor.black
-        //menuNode.position = CGPoint(x: frame.midX, y: frame.midY - 150)
-        //addChild(menuNode)
+        let menuNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
+        menuNode.name = "menuNode"
+        menuNode.text = "Return to Menu"
+        menuNode.fontSize = 30
+        menuNode.fontColor = SKColor.black
+        menuNode.position = CGPoint(x: frame.midX-200, y: frame.midY + 300)
+        addChild(menuNode)
         
         
         dev1Node = SKLabelNode(fontNamed: "MontereyFLF-Bold")
@@ -89,30 +103,30 @@ class CreditsScene: SKScene {
     }
     
     
-    //override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-       // let touch:UITouch = touches.first! as UITouch
-        //let positionInScene = touch.location(in: self)
-        //let touchedNode = self.atPoint(positionInScene)
-        //print("clicked")
-        //if let name = touchedNode.name,
-          //  name == "menuNode"{
-           // print("menuNode clicked")
-            //sceneNext = SKScene(fileNamed: "GameScene")
-        //}else{
-          //  return
+        let touch:UITouch = touches.first! as UITouch
+        let positionInScene = touch.location(in: self)
+        let touchedNode = self.atPoint(positionInScene)
+        print("clicked")
+        if let name = touchedNode.name,
+            name == "menuNode"{
+            print("menuNode clicked")
+            sceneNext = SKScene(fileNamed: "GameScene")
+        }else{
+            return
             
-        //}
+        }
         
-       // let transition = SKTransition.reveal(
-         //   with: .down, duration: 1.0)
-        //clockTimer.invalidate()
-        //clockTimer = Timer()
-        //let nextScene = sceneNext
-        //nextScene?.scaleMode = .aspectFill
+        let transition = SKTransition.reveal(
+            with: .down, duration: 1.0)
+        clockTimer.invalidate()
+        clockTimer = Timer()
+        let nextScene = sceneNext
+        nextScene?.scaleMode = .aspectFill
         
-        //scene?.view?.presentScene(sceneNext!, transition: transition)
-        //print("transitionToMenu from Credits")
+        scene?.view?.presentScene(sceneNext!, transition: transition)
+        print("transitionToMenu from Credits")
         
-    //}
+    }
 }
