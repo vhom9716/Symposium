@@ -27,6 +27,7 @@ class CreditsScene: SKScene {
         //textNodeNew.position = CGPoint(x: frame.midX, y: frame.midY + 200)
         
         //addChild(textNodeNew)
+        self.backgroundColor = SKColor.lightGray
         let musicfile = Bundle.main.path(forResource: "Coin01", ofType: ".aif")
         
         do{
@@ -46,7 +47,7 @@ class CreditsScene: SKScene {
         creditNode?.name = "creditNode"
         creditNode?.text = "Credit:"
         creditNode?.fontSize = 80
-        creditNode?.fontColor = SKColor.black
+        creditNode?.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         creditNode?.position = CGPoint(x: frame.midX, y: frame.midY + 300)
         addChild(creditNode!)
         
@@ -54,8 +55,8 @@ class CreditsScene: SKScene {
         menuNode.name = "menuNode"
         menuNode.text = "Return to Menu"
         menuNode.fontSize = 30
-        menuNode.fontColor = SKColor.black
-        menuNode.position = CGPoint(x: frame.midX-200, y: frame.midY + 300)
+        menuNode.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
+        menuNode.position = CGPoint(x: frame.midX-200, y: frame.midY + 500)
         addChild(menuNode)
         
         
@@ -63,7 +64,7 @@ class CreditsScene: SKScene {
         dev1Node?.name = "dev1Node"
         dev1Node?.text = "Jason Yan - Developer"
         dev1Node?.fontSize = 50
-        dev1Node?.fontColor = SKColor.black
+        dev1Node?.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         dev1Node?.position = CGPoint(x: frame.midX, y: frame.midY + 100)
         addChild(dev1Node!)
         
@@ -71,7 +72,7 @@ class CreditsScene: SKScene {
         dev2Node?.name = "dev2Node"
         dev2Node?.text = "Zhehao Lin - Developer"
         dev2Node?.fontSize = 50
-        dev2Node?.fontColor = SKColor.black
+        dev2Node?.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         dev2Node?.position = CGPoint(x: frame.midX, y: frame.midY - 50)
         addChild(dev2Node!)
         
@@ -79,7 +80,7 @@ class CreditsScene: SKScene {
         dev3Node?.name = "dev3Node"
         dev3Node?.text = "Victor Hom - Devloper"
         dev3Node?.fontSize = 50
-        dev3Node?.fontColor = SKColor.black
+        dev3Node?.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         dev3Node?.position = CGPoint(x: frame.midX, y: frame.midY - 200)
         addChild(dev3Node!)
         
