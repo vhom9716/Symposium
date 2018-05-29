@@ -23,9 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oGv-Bv-O2Z">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fe-wC-Ph2" customClass="SelectButton" customModule="testVH" customModuleProvider="target">
                                 <rect key="frame" x="16" y="186" width="150" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -51,21 +48,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luv-P8-IZe">
                                 <rect key="frame" x="120" y="498" width="135" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="ChooseCharacter"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MontereyFLF-Bold" family="MontereyFLF" pointSize="30"/>
+                                <state key="normal" title="Select!">
+                                    <color key="titleColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectCharacter:" destination="Dkn-3b-dXd" eventType="touchUpInside" id="IEh-6V-4Pe"/>
                                     <segue destination="Exz-EU-RZj" kind="show" id="hks-0s-s0B"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="oGv-Bv-O2Z" firstAttribute="trailing" secondItem="6SU-Aa-tN6" secondAttribute="trailing" id="6Xc-AG-2ow"/>
-                            <constraint firstItem="oGv-Bv-O2Z" firstAttribute="leading" secondItem="6SU-Aa-tN6" secondAttribute="leading" id="POC-yG-Yqb"/>
-                            <constraint firstItem="oGv-Bv-O2Z" firstAttribute="bottom" secondItem="yaO-Z4-2c8" secondAttribute="bottom" id="Qas-t2-zIT"/>
-                            <constraint firstItem="oGv-Bv-O2Z" firstAttribute="top" secondItem="yaO-Z4-2c8" secondAttribute="top" id="lWA-JJ-kze"/>
-                        </constraints>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6SU-Aa-tN6"/>
                     </view>
                     <connections>
@@ -110,7 +104,4 @@
             <point key="canvasLocation" x="732" y="-52"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="background" width="1920" height="1080"/>
-    </resources>
 </document>

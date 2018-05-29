@@ -23,7 +23,17 @@ class GameScene: SKScene {
 //        testingNode.name = "testingNode"
         self.backgroundColor = SKColor.lightGray
         
-        let newGameNode = SKLabelNode(fontNamed: "Papyrus")
+        let nameNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
+        nameNode.name = "gameName"
+        nameNode.text = "Money Team"
+        nameNode.fontSize = 80
+        nameNode.fontColor = SKColor.black
+        nameNode.position = CGPoint(x: frame.midX, y: frame.midY + 450)
+        addChild(nameNode)
+        
+        
+        
+        let newGameNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         newGameNode.name = "newGameNode"
         newGameNode.text = "New Game"
         newGameNode.fontSize = 80
@@ -31,7 +41,7 @@ class GameScene: SKScene {
         newGameNode.position = CGPoint(x: frame.midX, y: frame.midY + 300)
         addChild(newGameNode)
         
-        let loadGameNode = SKLabelNode(fontNamed: "Papyrus")
+        let loadGameNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         loadGameNode.name = "loadGameNode"
         loadGameNode.text = "Load Game"
         loadGameNode.fontSize = 80
@@ -39,7 +49,7 @@ class GameScene: SKScene {
         loadGameNode.position = CGPoint(x: frame.midX, y: frame.midY + 150)
         addChild(loadGameNode)
         
-        let optionsNode = SKLabelNode(fontNamed: "Papyrus")
+        let optionsNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         optionsNode.name = "optionsNode"
         optionsNode.text = "Options"
         optionsNode.fontSize = 80
@@ -47,7 +57,7 @@ class GameScene: SKScene {
         optionsNode.position = CGPoint(x: frame.midX, y: frame.midY)
         addChild(optionsNode)
         
-        let creditsNode = SKLabelNode(fontNamed: "Papyrus")
+        let creditsNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         creditsNode.name = "creditsNode"
         creditsNode.text = "Credits"
         creditsNode.fontSize = 80

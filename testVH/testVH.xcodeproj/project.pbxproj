@@ -10,7 +10,6 @@
 		3F3E868A2080FC60003E8BCA /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E86892080FC60003E8BCA /* SelectButton.swift */; };
 		3F67232920615495008BD8E4 /* NewGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F67232820615495008BD8E4 /* NewGameScene.sks */; };
 		3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AC26D205C11AD00FA2372 /* NewGameScene.swift */; };
-		3F9B088020AB2AC3004CCC11 /* Coin01.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B087F20AB2AC2004CCC11 /* Coin01.aif */; };
 		3F9B088320AB2C58004CCC11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9B088220AB2C57004CCC11 /* AVFoundation.framework */; };
 		3F9C51D6207FAE2100D48CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9C51D5207FAE2100D48CAB /* ViewController.swift */; };
 		3FA1135A205970070059A899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA11359205970070059A899 /* AppDelegate.swift */; };
@@ -54,7 +53,6 @@
 		3F3E86892080FC60003E8BCA /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
 		3F67232820615495008BD8E4 /* NewGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NewGameScene.sks; sourceTree = "<group>"; };
 		3F8AC26D205C11AD00FA2372 /* NewGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameScene.swift; sourceTree = "<group>"; };
-		3F9B087F20AB2AC2004CCC11 /* Coin01.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = Coin01.aif; path = ../../../../Downloads/SoundPack01/Coin01.aif; sourceTree = "<group>"; };
 		3F9B088220AB2C57004CCC11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F9C51D5207FAE2100D48CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FA11356205970070059A899 /* testVH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testVH.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +139,6 @@
 		3FA11358205970070059A899 /* testVH */ = {
 			isa = PBXGroup;
 			children = (
-				3F9B087F20AB2AC2004CCC11 /* Coin01.aif */,
 				3FEB835520A0A78A006F0A87 /* fonts */,
 				3FEB835020A0A4D9006F0A87 /* Assets.xcassets */,
 				3FA11359205970070059A899 /* AppDelegate.swift */,
@@ -309,7 +306,6 @@
 				3FAE51E62065471C00780A86 /* GameScene.sks in Resources */,
 				3FAE51EA206550C000780A86 /* OptionsScene.sks in Resources */,
 				3FEB835120A0A4D9006F0A87 /* Assets.xcassets in Resources */,
-				3F9B088020AB2AC3004CCC11 /* Coin01.aif in Resources */,
 				3FA1135E205970080059A899 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
