@@ -15,12 +15,13 @@ class GameScene: SKScene {
     private var NewGameScene: SKScene?
     
     override func didMove(to view: SKView) {
-        backgroundColor = SKColor.white
+        self.backgroundColor = SKColor.lightGray
         NewGameScene = SKScene(fileNamed: "NewGameScene")
 //        let testingNode = SKSpriteNode(imageNamed: "onedollar")
 //        testingNode.position = CGPoint(x: 300, y: 300)
 //        self.addChild(testingNode)
 //        testingNode.name = "testingNode"
+        self.backgroundColor = SKColor.lightGray
         
         let nameNode = SKLabelNode(fontNamed: "MontereyFLF-Bold")
         nameNode.name = "gameName"
@@ -36,7 +37,7 @@ class GameScene: SKScene {
         newGameNode.name = "newGameNode"
         newGameNode.text = "New Game"
         newGameNode.fontSize = 80
-        newGameNode.fontColor = SKColor.black
+        newGameNode.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         newGameNode.position = CGPoint(x: frame.midX, y: frame.midY + 300)
         addChild(newGameNode)
         
@@ -44,7 +45,7 @@ class GameScene: SKScene {
         loadGameNode.name = "loadGameNode"
         loadGameNode.text = "Load Game"
         loadGameNode.fontSize = 80
-        loadGameNode.fontColor = SKColor.black
+        loadGameNode.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         loadGameNode.position = CGPoint(x: frame.midX, y: frame.midY + 150)
         addChild(loadGameNode)
         
@@ -52,7 +53,7 @@ class GameScene: SKScene {
         optionsNode.name = "optionsNode"
         optionsNode.text = "Options"
         optionsNode.fontSize = 80
-        optionsNode.fontColor = SKColor.black
+        optionsNode.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         optionsNode.position = CGPoint(x: frame.midX, y: frame.midY)
         addChild(optionsNode)
         
@@ -60,7 +61,7 @@ class GameScene: SKScene {
         creditsNode.name = "creditsNode"
         creditsNode.text = "Credits"
         creditsNode.fontSize = 80
-        creditsNode.fontColor = SKColor.black
+        creditsNode.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         creditsNode.position = CGPoint(x: frame.midX, y: frame.midY - 150)
         addChild(creditsNode)
         
