@@ -32,7 +32,7 @@ class CreditsScene: SKScene {
         
         do{
             
-           try music=AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicfile!))
+           //try music=AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicfile!))
             
             
             // this sound effect need to be tested!
