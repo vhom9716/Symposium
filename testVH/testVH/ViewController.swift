@@ -49,6 +49,12 @@ class CharacterScreen: UIViewController {
                 sender.change()
             }
         }
+        if (!male.select && !female.select){
+            chooseCharacter.isEnabled = false
+        }
+        else{
+            chooseCharacter.isEnabled = true
+        }
     }
     
     override func viewDidLoad() {
@@ -81,6 +87,7 @@ class CharacterScreen: UIViewController {
         female.setBackgroundImage(UIImage(named:"femaleavatar.png"), for: .normal)
         chooseCharacter.layer.cornerRadius = 10
         chooseCharacter.clipsToBounds = true
+        chooseCharacter.isEnabled = false
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
