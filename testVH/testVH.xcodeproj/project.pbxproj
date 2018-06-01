@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0DA1B120BEF5E400849587 /* Coin01.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3F0DA1B020BEF5E300849587 /* Coin01.aif */; };
 		3F3E868A2080FC60003E8BCA /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E86892080FC60003E8BCA /* SelectButton.swift */; };
 		3F67232920615495008BD8E4 /* NewGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F67232820615495008BD8E4 /* NewGameScene.sks */; };
+		3F88798C20C1937D00F154A6 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88798B20C1937D00F154A6 /* TestViewController.swift */; };
+		3F88798E20C19B7C00F154A6 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88798D20C19B7C00F154A6 /* StockTableViewCell.swift */; };
 		3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AC26D205C11AD00FA2372 /* NewGameScene.swift */; };
 		3F9B088320AB2C58004CCC11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9B088220AB2C57004CCC11 /* AVFoundation.framework */; };
 		3F9C51D6207FAE2100D48CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9C51D5207FAE2100D48CAB /* ViewController.swift */; };
@@ -50,8 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0DA1B020BEF5E300849587 /* Coin01.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = Coin01.aif; path = ../../../../Downloads/SoundPack01/Coin01.aif; sourceTree = "<group>"; };
 		3F3E86892080FC60003E8BCA /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
 		3F67232820615495008BD8E4 /* NewGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NewGameScene.sks; sourceTree = "<group>"; };
+		3F88798B20C1937D00F154A6 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		3F88798D20C19B7C00F154A6 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		3F8AC26D205C11AD00FA2372 /* NewGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameScene.swift; sourceTree = "<group>"; };
 		3F9B088220AB2C57004CCC11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F9C51D5207FAE2100D48CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 				3FAE51E52065471C00780A86 /* GameScene.sks */,
 				3FA1135F205970080059A899 /* GameScene.swift */,
 				3FA11363205970080059A899 /* Main.storyboard */,
+				3F88798B20C1937D00F154A6 /* TestViewController.swift */,
 				3FA11368205970080059A899 /* LaunchScreen.storyboard */,
 				3FA1136B205970080059A899 /* Info.plist */,
 				3F67232820615495008BD8E4 /* NewGameScene.sks */,
@@ -154,12 +161,14 @@
 				3FAE51E7206550A900780A86 /* OptionsScene.swift */,
 				3FAE51E9206550C000780A86 /* OptionsScene.sks */,
 				3FAE51EB206550FF00780A86 /* CreditsScene.swift */,
+				3F0DA1B020BEF5E300849587 /* Coin01.aif */,
 				3FAE51ED2065510C00780A86 /* CreditsScene.sks */,
 				3F9C51D5207FAE2100D48CAB /* ViewController.swift */,
 				3F3E86892080FC60003E8BCA /* SelectButton.swift */,
 				3FA5CF7C209376E600CC8A07 /* PopUpViewController.swift */,
 				3FEB834820A0A219006F0A87 /* Stock.swift */,
 				3FEB834A20A0A23B006F0A87 /* Profile.swift */,
+				3F88798D20C19B7C00F154A6 /* StockTableViewCell.swift */,
 			);
 			path = testVH;
 			sourceTree = "<group>";
@@ -306,6 +315,7 @@
 				3FAE51E62065471C00780A86 /* GameScene.sks in Resources */,
 				3FAE51EA206550C000780A86 /* OptionsScene.sks in Resources */,
 				3FEB835120A0A4D9006F0A87 /* Assets.xcassets in Resources */,
+				3F0DA1B120BEF5E400849587 /* Coin01.aif in Resources */,
 				3FA1135E205970080059A899 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +350,9 @@
 				3F8AC26E205C11AD00FA2372 /* NewGameScene.swift in Sources */,
 				3FA5CF7D209376E600CC8A07 /* PopUpViewController.swift in Sources */,
 				3FEB834B20A0A23B006F0A87 /* Profile.swift in Sources */,
+				3F88798E20C19B7C00F154A6 /* StockTableViewCell.swift in Sources */,
 				3FEB834920A0A219006F0A87 /* Stock.swift in Sources */,
+				3F88798C20C1937D00F154A6 /* TestViewController.swift in Sources */,
 				3FAE51EC206550FF00780A86 /* CreditsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

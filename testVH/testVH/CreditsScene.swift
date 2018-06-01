@@ -13,7 +13,8 @@ class CreditsScene: SKScene {
     var dev2Node: SKLabelNode?
     var dev3Node: SKLabelNode?
     var clockTimer = Timer()
-    var music: AVAudioPlayer = AVAudioPlayer()
+    var player: AVAudioPlayer?
+    
     
     
     
@@ -28,18 +29,8 @@ class CreditsScene: SKScene {
         
         //addChild(textNodeNew)
         self.backgroundColor = SKColor.lightGray
-        let musicfile = Bundle.main.path(forResource: "Coin01", ofType: ".aif")
         
-        do{
-            
-           //try music=AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicfile!))
-            
-            
-            // this sound effect need to be tested!
-        }
-        catch{
-            print("hi")
-        }
+
         
         
         
@@ -83,11 +74,26 @@ class CreditsScene: SKScene {
         dev3Node?.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         dev3Node?.position = CGPoint(x: frame.midX, y: frame.midY - 200)
         addChild(dev3Node!)
-        
+        playSound()
         change()
+        
     
         
         
+    }
+    func playSound() {
+        let url = Bundle.main.url(forResource: "Coin01", withExtension: "aif")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.numberOfLoops = -1
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     func change(){
         
@@ -100,8 +106,37 @@ class CreditsScene: SKScene {
             self.dev1Node?.run(sequence)
             self.dev2Node?.run(sequence)
             self.dev3Node?.run(sequence)
+            
         })
     }
+    //func playBackgroundMusic(filename: String){
+      //  let url = Bundle.main.url(forResource: filename, withExtension: "aif")
+        
+        //Returns an error if it can't find the file name
+        //if (url == nil) {
+          //  print("Could not find the file \(filename)")
+       // }
+        
+        //var error: NSError? = nil
+        
+        //Assigns the actual music to the music player
+        
+         //   backgroundMusicPlayer = try? AVAudioPlayer(contentsOfURL: url, error: &error)
+        
+        
+        
+        //Error if it failed to create the music player
+       // if backgroundMusicPlayer == nil {
+         //   print("Could not create audio player: \(error!)")
+           // return
+        //}
+        
+        //A negative means it loops forever
+      //  backgroundMusicPlayer?.numberOfLoops = -1
+       // backgroundMusicPlayer?.prepareToPlay()
+        // backgroundMusicPlayer?.play()
+        
+    //}
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
