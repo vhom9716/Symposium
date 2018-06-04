@@ -11,6 +11,7 @@ import UIKit
 public class Stock{
     var color : UIColor
     var value = 0.0
+    //var priceChange : 
     var price : Double
     {
         get{
@@ -26,7 +27,7 @@ public class Stock{
             value = newvalue
         }
     }
-    var priceChange : 
+    
     var dividens = 0.0
     var name = ""
     
