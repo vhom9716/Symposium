@@ -10,13 +10,15 @@ import UIKit
 
 class StockTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var stockOwned: UILabel!
     @IBOutlet weak var stockName: UILabel!
     @IBOutlet weak var price: UILabel!
     var stock: Stock!
     override func awakeFromNib() {
         super.awakeFromNib()
         price.layer.cornerRadius = 8.0
-        price.backgroundColor = UIColor.green
+        price.layer.masksToBounds = true
+//        price.backgroundColor = stock.color
         // Initialization code
     }
 

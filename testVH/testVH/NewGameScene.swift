@@ -235,6 +235,7 @@ class NewGameScene: SKScene {
             
         }
         porfolioView.table.reloadData()
+        porfolioView.updateMoney()
         //print("jcs")
         updateStockLabels()
     }

@@ -19,6 +19,7 @@ class TestViewController: UIViewController ,UITableViewDelegate, UITableViewData
     @IBOutlet weak var ownedStockLabel: UILabel!
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var sellButton: UIButton!
+    @IBOutlet weak var moneyOwned: UILabel!
     
     
     
@@ -41,9 +42,27 @@ class TestViewController: UIViewController ,UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
+    func updateMoney(){
+        let v = "$100"
+        moneyOwned.text = v
+    }
+    
     //MARK: Buttons
     
+    @IBAction func sellButtonTapped(_ sender: Any) {
+    }
     @IBAction func buyButtonTapped(_ sender: Any) {
+        if let stock = selectedStock{
+            let game = (gameScene.scene as! NewGameScene)
+            for index in 0...game.stocks.count-1{
+                if game.stocks[index].name == stock.name{
+                    game.userProf.stockNums[index] = game.userProf.stockNums[index]+1
+                    table.reloadData()
+                    break
+                }
+                
+            }
+        }
     }
     
     
@@ -61,12 +80,13 @@ class TestViewController: UIViewController ,UITableViewDelegate, UITableViewData
     
     
     
-    
    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell") as! StockTableViewCell
         cell.stockName.text = stocks[indexPath.row].name
         cell.price.text = "$\(stocks[indexPath.row].price)"
+        cell.price.backgroundColor = stocks[indexPath.row].color
+        cell.stockOwned.text = "\((gameScene.scene as! NewGameScene).userProf.stockNums[indexPath.row])"
         cell.stock = stocks[indexPath.row]
         return cell
     }

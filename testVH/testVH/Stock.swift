@@ -6,17 +6,35 @@
 //  Copyright © 2018 Student. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class Stock{
-    var price = 0.0
+    var color : UIColor
+    var value = 0.0
+    var price : Double
+    {
+        get{
+            return value
+        }
+        set(newvalue){
+            if newvalue > value {
+                color = UIColor.green
+            }else{
+                color = UIColor.red
+            }
+            
+            value = newvalue
+        }
+    }
+    var priceChange : 
     var dividens = 0.0
     var name = ""
     
     init(price:Double, dividens:Double, name:String){
-        self.price = price
+        self.value = price
         self.dividens = dividens
         self.name = name
+        self.color = UIColor.green
     }
     
     func setPrice(price:Double){
