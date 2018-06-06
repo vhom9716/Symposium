@@ -21,13 +21,14 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+*.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
 *.dSYM.zip
 *.dSYM
-.DS_Store
+
 
 ## Playgrounds
 timeline.xctimeline
