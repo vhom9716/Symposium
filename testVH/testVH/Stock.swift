@@ -11,7 +11,14 @@ import UIKit
 public class Stock{
     var color : UIColor
     var value = 0.0
-    //var priceChange : 
+    //var priceChange : Double{
+      //  get{
+        //    return value
+        //}
+        //set(newvalue){
+            
+        //}
+    //}
     var price : Double
     {
         get{
