@@ -86,11 +86,11 @@ class CreditsScene: SKScene {
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
-            guard let player = player else { return }
+            //guard let player = player else { return }
             
-            player.numberOfLoops = -1
-            player.prepareToPlay()
-            player.play()
+            player?.numberOfLoops = -1
+            player?.prepareToPlay()
+            player?.play()
         } catch let error {
             print(error.localizedDescription)
         }
