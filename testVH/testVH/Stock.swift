@@ -11,20 +11,16 @@ import UIKit
 public class Stock{
     var color : UIColor
     var value = 0.0
-    //var priceChange : Double{
-      //  get{
-        //    return value
-        //}
-        //set(newvalue){
-            
-        //}
-    //}
+    var percentChange = 0.0
+    var priceChange : Double = 0.0
     var price : Double
     {
         get{
             return value
         }
         set(newvalue){
+            priceChange = newvalue - value
+            percentChange = (newvalue - value)/(value)*100
             if newvalue > value {
                 color = UIColor.green
             }else{

@@ -74,7 +74,7 @@ class CreditsScene: SKScene {
         dev3Node?.fontColor = UIColor(red:0.27, green:0.52, blue:0.00, alpha:1.0)
         dev3Node?.position = CGPoint(x: frame.midX, y: frame.midY - 200)
         addChild(dev3Node!)
-        playSound()
+       playSound()
         change()
         
     

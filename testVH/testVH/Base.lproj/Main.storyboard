@@ -107,7 +107,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmz-5t-qQ0">
-                                                    <rect key="frame" x="162" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="124" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCR-4W-8Yf">
+                                                    <rect key="frame" x="189" y="12" width="71" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -116,6 +123,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="percentChange" destination="pCR-4W-8Yf" id="278-sM-Ymh"/>
                                             <outlet property="price" destination="oM9-zi-MTx" id="OLA-v6-K1E"/>
                                             <outlet property="stockName" destination="GQT-w1-HQ0" id="daz-wu-WeR"/>
                                             <outlet property="stockOwned" destination="Wmz-5t-qQ0" id="PL7-dd-n9d"/>
@@ -123,8 +131,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jib-xc-PJM">
+                                <rect key="frame" x="95" y="323" width="192" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <skView contentMode="scaleAspectFill" fixedFrame="YES" sceneName="NewGameScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-Qh-GVE">
+                                <rect key="frame" x="8" y="468" width="375" height="199"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </skView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="aTl-jC-MPQ">
-                                <rect key="frame" x="68" y="271" width="239.5" height="30"/>
+                                <rect key="frame" x="109" y="271" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRd-2I-wOi">
@@ -136,17 +155,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Owned" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-7E-iLA">
-                                        <rect key="frame" x="73" y="0.0" width="80.5" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80.5" id="W8v-fG-chE"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-3E-crA">
-                                        <rect key="frame" x="156.5" y="0.0" width="40" height="30"/>
+                                        <rect key="frame" x="73" y="0.0" width="40" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="8VU-FF-Ku8"/>
                                         </constraints>
@@ -156,7 +166,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znp-4K-aXK">
-                                        <rect key="frame" x="199.5" y="0.0" width="40" height="30"/>
+                                        <rect key="frame" x="116" y="0.0" width="40" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="kJ3-aw-KFN"/>
                                         </constraints>
@@ -167,17 +177,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jib-xc-PJM">
-                                <rect key="frame" x="166" y="340" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <skView contentMode="scaleAspectFill" fixedFrame="YES" sceneName="NewGameScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-Qh-GVE">
-                                <rect key="frame" x="8" y="468" width="375" height="199"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </skView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8Rq-XG-zlY"/>
@@ -186,7 +185,6 @@
                         <outlet property="buyButton" destination="fwg-3E-crA" id="IsQ-Ga-cpz"/>
                         <outlet property="gameScene" destination="Wy5-Qh-GVE" id="hs1-2M-R8w"/>
                         <outlet property="moneyOwned" destination="Jib-xc-PJM" id="Kdw-L9-Tpb"/>
-                        <outlet property="ownedStockLabel" destination="dnN-7E-iLA" id="xah-oT-fCD"/>
                         <outlet property="selectedStockLabel" destination="DRd-2I-wOi" id="EcB-bZ-7Gh"/>
                         <outlet property="sellButton" destination="znp-4K-aXK" id="Xjh-MK-0ra"/>
                         <outlet property="table" destination="yHW-Xv-219" id="nJY-iW-uwA"/>
