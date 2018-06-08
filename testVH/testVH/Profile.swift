@@ -20,7 +20,7 @@ class Profile{
     init(name:String){
         self.name = name
     }
-    
+     
     func updateProfile(stocks:[Stock]){
         dividens = 0.0
         for index in 0...stockNums.count - 1{

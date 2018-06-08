@@ -17,7 +17,7 @@ public class Stock{
     {
         get{
             return value
-        }
+        } 
         set(newvalue){
             priceChange = newvalue - value
             percentChange = (newvalue - value)/(value)*100
