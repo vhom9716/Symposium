@@ -12,7 +12,13 @@ public class Stock{
     var color : UIColor
     var value = 0.0
     var percentChange = 0.0
+    var dividens: Double
     var priceChange : Double = 0.0
+    var name : String
+    var volitability : Double
+    var currentTrend : Trend
+    var state = 0.5
+    
     var price : Double
     {
         get{

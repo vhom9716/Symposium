@@ -10,6 +10,7 @@ import UIKit
 import SpriteKit
 
 class TestViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
+    //change?
     
     @IBOutlet weak var gameScene: SKView!
     var stocks: [Stock] = []
