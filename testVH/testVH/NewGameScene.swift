@@ -81,18 +81,6 @@ class NewGameScene: SKScene {
         moneyNode?.position = CGPoint(x : frame.midX, y: frame.midY + 300)
         addChild((moneyNode)!)
         
-        
-        /*
-         template for buttons
-         let  = SKLabelNode(fontNamed: "Chalkduster")
-         .name = "ab"
-         .text = "Click For Money!"
-         .fontSize = 65
-         .fontColor = SKColor.green
-         .position = CGPoint(x: frame.midX, y: frame.midY + 200)
-         addChild()
-         */
-        
         timerNode = SKLabelNode(fontNamed: "Papyrus")
         timerNode?.name = "timerNode"
         timerNode?.fontSize = 40
@@ -100,7 +88,7 @@ class NewGameScene: SKScene {
         timerNode?.position = CGPoint(x : frame.midX + 100, y: frame.midY + 500)
         addChild((timerNode)!)
         
-        clockTimer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: true, block:{
+        clockTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block:{
             timer in
             self.currentCycle += 1
             self.timeVal += 1
@@ -122,89 +110,6 @@ class NewGameScene: SKScene {
     }
     
     override func didMove(to view: SKView) {
-//        print("MOved")
-//        let textNodeNew = SKLabelNode(fontNamed: "Papyrus")
-//        textNodeNew.name = "ab"
-//        textNodeNew.text = "Click For Money!"
-//        textNodeNew.fontSize = 50
-//        textNodeNew.fontColor = SKColor.green
-//        textNodeNew.position = CGPoint(x: frame.midX, y: frame.midY + 250)
-//        addChild(textNodeNew)
-//
-//        ownedStocks = SKLabelNode(fontNamed: "Papyrus")
-//        ownedStocks?.name = "stocksOwned"
-//        ownedStocks?.text = "Stocks: "
-//        ownedStocks?.fontSize = 33
-//        ownedStocks?.fontColor = SKColor.green
-//        ownedStocks?.position = CGPoint(x: frame.midX - 100, y: frame.midY + 200)
-//        addChild(ownedStocks!)
-//
-//        for index in 0...sPrices.count - 1 {
-//            let a = Stock(price: sPrices[index], dividens: sDividens[index], name: sNames[index])
-//            stocks.append(a)
-////            porfolioView.stocks.append(a)
-//            let b = SKLabelNode(fontNamed: "Papyrus")
-//            b.name = "\(stocks[index].name)"
-//            b.text = "\(stocks[index].name)  Price:\(stocks[index].price)  Dividens:\(stocks[index].dividens)"
-//            b.fontSize = 35
-//            b.fontColor = SKColor.green
-//            b.position = CGPoint(x: frame.midX, y: frame.midY - CGFloat(80*index))
-//            addChild(b)
-//            stockLabels.append(b)
-//        }
-//
-//
-//
-//        let menuNode = SKLabelNode(fontNamed: "Papyrus")
-//        menuNode.name = "menuNode"
-//        menuNode.text = "Return to Menu"
-//        menuNode.fontSize = 80
-//        menuNode.fontColor = SKColor.black
-//        menuNode.position = CGPoint(x: frame.midX, y: frame.midY - 400)
-//        addChild(menuNode)
-//
-//        moneyNode = SKLabelNode(fontNamed: "Papyrus")
-//        moneyNode?.fontSize = 40
-//        moneyNode?.text = "Money: \(userProf.money)"
-//        moneyNode?.position = CGPoint(x : frame.midX, y: frame.midY + 300)
-//        addChild((moneyNode)!)
-//
-//
-//        /*
-//         template for buttons
-//         let  = SKLabelNode(fontNamed: "Chalkduster")
-//         .name = "ab"
-//         .text = "Click For Money!"
-//         .fontSize = 65
-//         .fontColor = SKColor.green
-//         .position = CGPoint(x: frame.midX, y: frame.midY + 200)
-//         addChild()
-//         */
-//
-//        timerNode = SKLabelNode(fontNamed: "Papyrus")
-//        timerNode?.name = "timerNode"
-//        timerNode?.fontSize = 40
-//        timerNode?.text = "\(timeVal)/2 per month  \(stockChangeVal)/5 months"
-//        timerNode?.position = CGPoint(x : frame.midX + 100, y: frame.midY + 500)
-//        addChild((timerNode)!)
-//
-//        clockTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block:{
-//            timer in
-//            self.timeVal += 1
-//            self.timerNode?.text = "\(self.timeVal)/2 per month  \(self.stockChangeVal)/5 months"
-//            if(self.timeVal == 2){
-//                self.timeVal = 0
-//                self.userProf.money += self.userProf.updateDividens(stocks: self.stocks)
-//                self.moneyNode?.text = "Money:\(round(self.userProf.money*100)/100)  Dividens: \(round(self.userProf.dividens*100)/100)"
-//                self.stockChangeVal += 1
-//                //print("money updated \(self.stockChangeVal)")
-//            }
-//            if(self.stockChangeVal == 5){
-//                self.stockChangeVal = 0
-//                self.updateStocks()
-//                //print("stockUpdating")
-//            }
-//        })
         
     }
     
