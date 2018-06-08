@@ -21,7 +21,7 @@ public class Stock{
     {
         get{
             return value
-        }
+        } 
         set(newvalue){
             if newvalue > value {
                 color = UIColor.green
