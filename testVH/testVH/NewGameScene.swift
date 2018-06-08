@@ -31,6 +31,7 @@ class NewGameScene: SKScene {
     var ownedStocks: SKLabelNode?
     let sound = SKAction.playSoundFileNamed("Coin01.aif", waitForCompletion: false)
     var porfolioView: TestViewController!
+    var currentCycle = 0
     
     func startRunning(){
         print("MOved")
@@ -51,7 +52,7 @@ class NewGameScene: SKScene {
         addChild(ownedStocks!)
         
         for index in 0...sPrices.count - 1 {
-            let a = Stock(price: sPrices[index], dividens: sDividens[index], name: sNames[index])
+            let a = Stock(price: sPrices[index], dividens: sDividens[index], name: sNames[index], volitability:sDividens[index], startCycle: currentCycle)
             stocks.append(a)
                         porfolioView.stocks.append(a)
             let b = SKLabelNode(fontNamed: "Papyrus")
@@ -99,14 +100,16 @@ class NewGameScene: SKScene {
         timerNode?.position = CGPoint(x : frame.midX + 100, y: frame.midY + 500)
         addChild((timerNode)!)
         
-        clockTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block:{
+        clockTimer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: true, block:{
             timer in
+            self.currentCycle += 1
             self.timeVal += 1
             self.timerNode?.text = "\(self.timeVal)/2 per month  \(self.stockChangeVal)/5 months"
+            print(Utilities.getTime(time: self.currentCycle))
             if(self.timeVal == 2){
                 self.timeVal = 0
-                self.userProf.money += self.userProf.updateDividens(stocks: self.stocks)
-                self.moneyNode?.text = "Money:\(round(self.userProf.money*100)/100)  Dividens: \(round(self.userProf.dividens*100)/100)"
+                self.userProf.updateProfile(stocks: self.stocks)
+                self.moneyNode?.text = "Money:\(Utilities.roundToDecimalPoint(num: self.userProf.money, decimalPoints: 2))  Dividens: \(Utilities.roundToDecimalPoint(num: self.userProf.dividens, decimalPoints: 2))"
                 self.stockChangeVal += 1
                 //print("money updated \(self.stockChangeVal)")
             }
@@ -207,33 +210,24 @@ class NewGameScene: SKScene {
     
     func updateStocks(){
         for index in 0...stocks.count-1{
-            var priceChange = round(drand48()*1000)/100
-            var divChange = round(drand48()*100)/1000
-            if(drand48() > 0.5){
-                stocks[index].price =  round((stocks[index].price + priceChange)*100)/100
-                stocks[index].dividens = round((stocks[index].dividens + divChange)*100)/100
-                //print("\(stocks[index].name) stock rose by \(priceChange) in price and \(divChange) in dividens")
+            let s = stocks[index]
+            let sTrend = s.currentTrend
+                
+            if(sTrend.checkStabilityChange() < 0){
+                print("Stability Update: \(s.name) has destabalized. The count is at \(sTrend.consecutiveCount)/\(sTrend.consecutiveLimit) with stability at \(s.currentTrend.stability)")
+                if(sTrend.remainsActive){
+                    print("Trend Update: \(s.name) has remained active")
+                    sTrend.modifyStock(s: s, modifier: sTrend.checkStabilityChange())
+                }else{
+                    s.generateNewTrend(startCycle:currentCycle)
+                }
             }else{
-                if(stocks[index].price <= 0){
-                    priceChange = 0.0
-                }else{
-                    while(priceChange > stocks[index].price){
-                        priceChange = round(drand48()*1000)/100
-                    }
-                }
-                stocks[index].price = round((stocks[index].price - priceChange)*100)/100
-                if(stocks[index].dividens <= 0){
-                    divChange = 0.0
-                }else{
-                    while(divChange > stocks[index].dividens){
-                        divChange = round(drand48()*100)/1000
-                    }
-                }
-                stocks[index].dividens = round((stocks[index].dividens - divChange)*100)/100
-                //print("\(stocks[index].name) stock fell by \(priceChange) in price and \(divChange) in dividens")
+                print("Stability Update: \(s.name) has remained stable.")
             }
-            
         }
+        updateStockLabels()
+            
+        
         porfolioView.table.reloadData()
         porfolioView.updateMoney()
         //print("jcs")
@@ -242,7 +236,7 @@ class NewGameScene: SKScene {
     
     func updateStockLabels(){
         for index in 0...stockLabels.count - 1{
-            stockLabels[index].text = "\(stocks[index].name)  Price:\(round(stocks[index].price*100)/100)  Dividens:\(round(stocks[index].dividens*100)/100) :\(round(stocks[index].dividens*stocks[index].price*100)/100)"
+            stockLabels[index].text = "\(stocks[index].name)  Price:\(Utilities.roundToDecimalPoint(num: stocks[index].price, decimalPoints: 2))  Dividens:\(round(stocks[index].dividens*100)/100) :\(Utilities.roundToDecimalPoint(num: stocks[index].dividens*stocks[index].price, decimalPoints: 2))"
         }
     }
     
@@ -315,7 +309,7 @@ class NewGameScene: SKScene {
             return
             
         }
-        moneyNode?.text = "Money: \(round(userProf.money*100)/100)" + "  Dividens: \(round(userProf.dividens*100)/100)"
+        moneyNode?.text = "Money: \(Utilities.roundToDecimalPoint(num: userProf.money, decimalPoints: 2))" + "  Dividens: \(Utilities.roundToDecimalPoint(num: userProf.dividens, decimalPoints: 2))"
         updateStocksOwned()
         let transition = SKTransition.reveal(
             with: .down, duration: 1.0)
