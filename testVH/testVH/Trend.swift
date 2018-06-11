@@ -64,12 +64,12 @@ class Trend{
         let oldDiv = s.dividens
         let oldPri = s.price
         
-        s.dividens = Utilities.roundToDecimalPoint(num: s.dividens * rate * drand48() * modifier, decimalPoints: 2)
+        s.dividens = Utilities.roundToDecimalPoint(num: (s.dividens + (rate/10) + drand48()) + modifier, decimalPoints: 2)
         if(s.dividens<0){
             s.dividens = 0
         }
         
-        s.price += Utilities.roundToDecimalPoint(num: s.price * rate * drand48() * modifier, decimalPoints: 2)
+        s.price += Utilities.roundToDecimalPoint(num: (s.price * (1 + rate)) * drand48() + modifier, decimalPoints: 2)
         if(s.price<0){
             s.price = 0
         }

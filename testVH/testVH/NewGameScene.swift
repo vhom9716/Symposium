@@ -34,7 +34,7 @@ class NewGameScene: SKScene {
     var currentCycle = 0
     
     func startRunning(){
-        print("MOved")
+        print("Running")
         let textNodeNew = SKLabelNode(fontNamed: "Papyrus")
         textNodeNew.name = "ab"
         textNodeNew.text = "Click For Money!"
@@ -58,9 +58,9 @@ class NewGameScene: SKScene {
             let b = SKLabelNode(fontNamed: "Papyrus")
             b.name = "\(stocks[index].name)"
             b.text = "\(stocks[index].name)  Price:\(stocks[index].price)  Dividens:\(stocks[index].dividens)"
-            b.fontSize = 35
+            b.fontSize = 20
             b.fontColor = SKColor.green
-            b.position = CGPoint(x: frame.midX, y: frame.midY - CGFloat(80*index))
+            b.position = CGPoint(x: frame.midX, y: frame.midY - CGFloat(30*index))
             addChild(b)
             stockLabels.append(b)
         }

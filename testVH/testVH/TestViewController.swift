@@ -34,6 +34,7 @@ class TestViewController: UIViewController ,UITableViewDelegate, UITableViewData
         table.dataSource = self
         game = gameScene.scene as! NewGameScene
         game.porfolioView = self
+        print("dkhflk")
         game.startRunning()
         // Do any additional setup after loading the view.
     }
@@ -69,8 +70,9 @@ class TestViewController: UIViewController ,UITableViewDelegate, UITableViewData
         if let stock = selectedStock{
             let game = (gameScene.scene as! NewGameScene)
             for index in 0...game.stocks.count-1{
-                if game.stocks[index].name == stock.name{
+                if game.stocks[index].name == stock.name && game.stocks[index].price <= game.userProf.money{
                     game.userProf.stockNums[index] = game.userProf.stockNums[index]+1
+                    game.userProf.money -= game.stocks[index].price
                     table.reloadData()
                     break
                 }
